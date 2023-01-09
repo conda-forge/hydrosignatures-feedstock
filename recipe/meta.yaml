@@ -20,9 +20,10 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - numpy
-    - pandas
+    - numpy >=1.21
+    - pandas >=1.0
     - scipy
+    - xarray >=2022.03.0
 
 test:
   imports:
