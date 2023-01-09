@@ -1,5 +1,5 @@
 {% set name = "hydrosignatures" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/hydrosignatures-{{ version }}.tar.gz
-  sha256: 8354e6a3c722dff14548e9a643983a059d1ad9da426c5d811c77208b6f34f75f
+  sha256: 8f6ebdca539192819e076ec4877487d45bbbcb06402513fc35bddbdb5c1b9e6c
 
 build:
   noarch: python
