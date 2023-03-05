@@ -1,11 +1,11 @@
-About hydrosignatures
-=====================
+About hydrosignatures-feedstock
+===============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hydrosignatures-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/hyriver/hydrosignatures
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hydrosignatures-feedstock/blob/main/LICENSE.txt)
 
 Summary: A collection of tools for computing hydrological signatures
 
