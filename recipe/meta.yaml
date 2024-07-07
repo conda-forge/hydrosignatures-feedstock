@@ -1,5 +1,5 @@
 {% set name = "hydrosignatures" %}
-{% set version = "0.16.0" %}
+{% set version = "0.17.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 33ed44c6da98557581eb853442da67e0a7542d5aa5f56facf9f6fef72c11a82e
+  sha256: 9fd6414085ba61088fcda80c3ed061551e0edb691e044a651fe4148b8fc3d2f7
 
 build:
   noarch: python
@@ -17,8 +17,8 @@ build:
 requirements:
   host:
     - python >=3.8
-    - setuptools >=42
-    - setuptools-scm >=7
+    - hatchling
+    - hatch-vcs
     - pip
   run:
     - python >=3.8
