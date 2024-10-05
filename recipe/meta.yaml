@@ -1,5 +1,5 @@
 {% set name = "hydrosignatures" %}
-{% set version = "0.17.1" %}
+{% set version = "0.18.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e052ef6638b9d920c9441f04d99190c40b157e1e3a46ca4cd570d28070e48f05
+  sha256: cf6f5a4bce78534b8fe1f6a3549da8c38dbd9ea4d75143957a08b338e07dc963
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
     - pip
   run:
     - python >=3.9
-    - numpy >=1.21
+    - numpy >=2
     - pandas >=1.0
     - scipy
     - xarray >=2023.03.0
