@@ -6,22 +6,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: cf6f5a4bce78534b8fe1f6a3549da8c38dbd9ea4d75143957a08b338e07dc963
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - hatchling
     - hatch-vcs
     - pip
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - numpy >=2
     - pandas >=1.0
     - scipy
@@ -34,6 +34,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/hyriver/hydrosignatures
